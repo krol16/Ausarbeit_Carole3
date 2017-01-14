@@ -1,0 +1,1749 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+
+\lang ngerman
+Installation von Kali Linux auf Linux-Deploy
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Die Installation von Kali Linux Distribution auf Linux-Deploy befolgt die
+ folgenden Anweisungen:
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang ngerman
+Gerootetes Android-Tablet für diese Installation erforderlich
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Das Gerät muss gerootet sein.
+ "Root" unter Android ist ganz wichtig.
+ Im Grunde bezeichnet "root" ein Nutzer, der volle Zugriffs- und Schreibrechte
+ auf das System hat.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Es gibt viele Vorteile, wenn ein Gerät gerootet ist.
+ Beispiele: 
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Funktionen nachrüsten (z.B.
+ Multi-User auf Handys) 
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+CPU/GPU-Anpassungen (z.B.
+ für mehr Leistung) 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang ngerman
+Die administrativen Rechte durch SuperSU
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Die administrativen Rechte unter Android werden durch 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{SuperSU}
+\end_layout
+
+\end_inset
+
+ geregelt, das heißt, jede andere App, die Root-Rechte fordert, muss durch
+ die genannte App manuell freigegeben werden.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang ngerman
+benötigte Apps
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Die drei folgenden Apps sind vor der Installation von Kali Linux zu installieren.
+\end_layout
+
+\begin_layout Subparagraph*
+
+\lang ngerman
+Die Virtuelle Maschine Busy Box
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Busybox ist eine Software, die viele der Standard-Unix-Befehle, wie die
+ GNU Core Utilities implementiert.
+ Da jede ausführbare Binärdatei für GNU / Linux mehrere Kilobyte zusätzliche
+ Informationen enthält,die Idee von kombinieren mehr als zweihundert Programme
+ in eine ausführbare Datei ist gut.
+ BusyBox ist eine freie Software.
+ 
+\end_layout
+
+\begin_layout Subparagraph*
+
+\lang ngerman
+Linux Deploy
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Diese Anwendung ist Open-Source-Software für die schnelle und einfache Installat
+ion des Betriebssystems (OS) GNU / Linux auf Ihrem Android-Gerät.
+ Die Anwendung erstellt ein Disk-Image auf einer Flash-Karte, montiert es
+ und installiert eine OS-Verteilung.
+ Anwendungen des neuen Systems werden in einer chroot-Umgebung ausgeführt
+ und arbeiten mit der Android-Plattform zusammen.
+\end_layout
+
+\begin_layout Subparagraph*
+
+\lang ngerman
+Android VNC Viewer
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+VNC Viewer ist das ursprüngliche Open Source (GPL) Remote-Desktop-Programm
+ für Android-Geräte.
+ Es ist kostenlos.
+ VNC Viewer ermöglicht den Fernzugriff auf Linux.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang ngerman
+Installation und Konfiguration
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Die folgende Abbildung 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Schritte für die Installation von Kali Linux auf Linux Deploy"
+
+\end_inset
+
+ zeigt die Schritte zu folgen.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+In dieser Abbildung ist genau geschrieben in 8 Schritte, was wir tun sollen.
+ Vom Übernahme der Nutzungsrechten bis die Verbindung mit VNC Viewer.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang ngerman
+\begin_inset Graphics
+	filename Beitrag Carole/IT-Sichereit-master/Image/geänderte Bildergröße/img1.jpg
+	lyxscale 10
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Schritte für die Installation von Kali Linux auf Linux Deploy
+\begin_inset CommandInset label
+LatexCommand label
+name "Schritte für die Installation von Kali Linux auf Linux Deploy"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Wir müssen die Parameter von Kali Linux überprüfen, diese Parameter sind
+ in dem Abbildungen 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Zu-überprüfende-Eigenschaften-von-Kali-Linux- Parameter-1"
+
+\end_inset
+
+, und 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Zu-überprüfende-Eigenschaften-von-Kali-Linux- Parameter-2"
+
+\end_inset
+
+ veranschaulicht.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+In der Abbildung 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Zu-überprüfende-Eigenschaften-von-Kali-Linux- Parameter-1"
+
+\end_inset
+
+ sind die Parameter wie folgt konfiguriert:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+die Architektur: armhf (relativ einfache Architektur als andere Prozessorfamilie
+n und geringer Stromverbrauch bei hoher Leistungsfähigkeit)
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Distribution Suite: Kali-Rolling (Sie ist zuverlässig, und die Pakete werden
+ immer wieder aktualisiert)
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Quellpfad: http://http.kali.org/kali/ (Adresse vom fernen Repository)
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Installation Pfad: 
+\backslash
+$
+\backslash
+{EXTERNAL
+\backslash
+_ STORAGE
+\backslash
+}
+\backslash
+/linux.img (Die Stelle, wo das Abbild erstellt wird)
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Image Größe(MB): Automatische Berechnung
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Dateisystem: Auto 
+\backslash
+
+\backslash
+ - Benutzername: Kali (diese Parameter kann angepasst werden.
+ Wir haben Kali ausgewählt)
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Benutzerpassword: kali0123 (diese Parameter kann auch angepasst werden.
+ Wir haben Kali0123 ausgewählt)
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Privileged Users: Root
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+DNS Server: Automatische Erkennung
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename Beitrag Carole/IT-Sichereit-master/Image/geänderte Bildergröße/img2.jpg
+	lyxscale 10
+	width 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Parameter 1
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Zu-überprüfende-Eigenschaften-von-Kali-Linux- Parameter-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename Beitrag Carole/IT-Sichereit-master/Image/geänderte Bildergröße/img3.jpg
+	lyxscale 10
+	width 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Parameter 2 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Zu-überprüfende-Eigenschaften-von-Kali-Linux- Parameter-2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Zu überprüfende Eigenschaften von Kali Linux
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+In der Abbildung 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Zu-überprüfende-Eigenschaften-von-Kali-Linux- Parameter-2"
+
+\end_inset
+
+ sind die Parameter wie folgt konfiguriert:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+SSH Enable (Erlaube das Mount der Android Resources)
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+GUI Enable (Die Desktopumgebung wird beim Start des Linux-Systems hochgefahren)
+\end_layout
+
+\begin_layout Standard
+Ganz wichtig für die Installation von Kali Linux, eine gute Internet Verbindung.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Alle benötigten Pakete werden aus unseren Repositories heruntergeladen,
+ das heißt wir benötigen eine schnelle Internetverbindung, um diese Installation
+smethode zu verwenden.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Wir müssen auch mindestens 2GB frei auf der internen oder externen Speicher
+ lassen.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Wir klicken dann auf 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Install}
+\end_layout
+
+\end_inset
+
+ (Properties 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+rightarrow$
+\end_layout
+
+\end_inset
+
+ Install)
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Sobald die Einstellungen fertig sind, klicken wir auf Install.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Diese Aktion wird einen Kali Linux-Bootstrap direkt aus den Repositories
+ starten.
+ Diese Vorgang nimmt ungefähr 30 Minuten Zeit in Anspruch.
+ Wir laden eine Basisinstallation von Kali Linux auf Minimum herunter.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Wir klicken dann auf  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Configure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Die Abbildung 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Konfigurationparameter"
+
+\end_inset
+
+ zeigt wie das aussieht.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Im Anschluss klicken wir auf 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Start}
+\end_layout
+
+\end_inset
+
+.
+ Sobald die automatische Konfiguration abgeschlossen ist, können wir Linux
+ Deploy automatisch installieren und laden das Kali Linux Chroot-Image.
+ Dazu gehört auch der Start von Diensten wie SSH und VNC für leichteren
+ Fernzugriff.
+ All dies geschieht automatisch, indem man den Start-Button drückt.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename Beitrag Carole/IT-Sichereit-master/Image/geänderte Bildergröße/img4.jpg
+	lyxscale 10
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Konfigurationsparameter der Linux Deploy Parameter 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Konfigurationparameter"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang ngerman
+Meldung mit Android VNC Viewer
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Wir melden uns an Android VNC Viewer mit normalen User Parameter, was in
+ der Abbildung 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Anmeldung-an-Android-VNC-Viewer"
+
+\end_inset
+
+ zu sehen ist.
+ Anschließend erscheint die GUI von VNC Viewer in der Abbildung 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GUI-von-VNC-Viewer"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename Beitrag Carole/IT-Sichereit-master/Image/geänderte Bildergröße/img6.jpg
+	lyxscale 10
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Anmeldung an Android VNC Viewer
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Anmeldung-an-Android-VNC-Viewer"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename Beitrag Carole/IT-Sichereit-master/Image/geänderte Bildergröße/img7.jpg
+	lyxscale 10
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+GUI von VNC Viewer 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:GUI-von-VNC-Viewer"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Anmeldung und Startbildschirm des VNC Viewer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Literatur Installing and und Running Kali Linux with Linux Deploy.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Carole1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+Installation Nethunter
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Das Kali Linux Nethunter Projekt ist das erste Open Source Android Penetrationst
+ests Plattform für Nexus-Geräte.
+ NetHunter unterstützt Wireless 802.11 Frame-Injektion sowie BadUSB MITM
+ Angriffe, etc.
+ Die folgende Schritte sind zu folgen, um die Installation von Nethunter
+ zu führen.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang ngerman
+Backup
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Das Datensicherung ist ganz wichtig.
+ Es passiert immer wieder, dass durch Hardwaredefekte, Systemfehler oder
+ Benutzerfehler die Daten nicht wiederhergestellt werden können.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Wir machen ein Backup vor der Installation, um die Daten zu speichern.
+ Diese Aktion haben wir mit Nexus Root Toolkit angelegt.
+ Das Bild 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Installation"
+
+\end_inset
+
+dient der Darstellung des Install-Button.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename Beitrag Carole/IT-Sichereit-master/Image/geänderte Bildergröße/img10.jpg
+	lyxscale 7
+	width 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Installation 
+\begin_inset CommandInset label
+LatexCommand label
+name "Installation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang ngerman
+Gerootetes Android-Tablet für diese Installation erforderlich
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Das Gerät muss gerootet sein.
+ Die Apps für Nethunter benötigen Super User/Administratorische Rechte.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Sobald der Nutzer Admin-Rechte besitzt, kann er unter Android im Prinzip
+ das komplette System verändern.
+ Dazu gehören unter anderem UI Customization genauso wie das Ändern von
+ Systemeinstellungen.
+ Per Root ist es zum Beispiel möglich, einen systemweiten Equalizer zu installie
+ren, die maximale Lautstärke zu erhöhen und selbst die gesamte Menüführung
+ anzupassen.
+ Per Root-Zugriff lassen sich auch vorinstallierte Apps entfernen, die von
+ vielen Herstellern mitgeliefert werden.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang ngerman
+Der Bootloader
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Der Bootloader (bootstrap loader) muss entsperrt sein.
+ 
+\end_layout
+
+\begin_layout Standard
+Er ist eine Software, der ein oder mehrere Betriebssysteme (Multi-Boot)
+ zu laufen ermöglicht.
+ Das heißt er erlaubt mehrere Systeme zu unterschiedlichen Zeiten auf der
+ gleichen Maschine.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Der Bootloader lädt weitere Teile des Betriebssystems und stellt sicher,
+ dass alles richtig und vollständig ist.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang ngerman
+Die administrativen Rechte durch SuperSU
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Die administrativen Rechte unter Android werden durch 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{SuperSU}
+\end_layout
+
+\end_inset
+
+ geregelt.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang ngerman
+BusyBox
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Die Virtuelle Maschine ist eine Software, die viele der Standard-Unix-Befehle,
+ wie die GNU Core Utilities implementiert.
+ Sie ist automatisch installiert.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang ngerman
+Die richtige Version von Kali Nethunter herunterladen
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Laden die richtige Version von Nethunter für Nexus 7 Android 5.1.1 herunter.
+ Diese Version heißt 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Lollipop} 
+\end_layout
+
+\end_inset
+
+ und ist verfügbar unter:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+http://null-byte.wonderhowto.com/how-to/flash-kali-nethunter-oneplus-and-nexus-dev
+ices-most-as-secondary-rom-0162389/
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang ngerman
+TWRP custom Recovery Installen
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Mit Team Win Recovery Project (TWRP) können wir Custom-ROMs installieren
+ und ein komplettes Backup unseres Android-Tablet erstellen.
+ Schauen die Abbildung 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Startoption-TWRP"
+
+\end_inset
+
+ und 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Version und Kontakt Anzeige TWRP"
+
+\end_inset
+
+ an, wie TWRP aussieht, sein Version und Kontakt.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename Beitrag Carole/IT-Sichereit-master/Image/geänderte Bildergröße/img8.jpg
+	lyxscale 10
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Startoption TWRP 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Startoption-TWRP"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename Beitrag Carole/IT-Sichereit-master/Image/geänderte Bildergröße/img9.jpg
+	lyxscale 10
+	width 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Version und Kontakt Anzeige TWRP 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Version und Kontakt Anzeige TWRP"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+TWRP Parameter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mit TWRP wählen wir die NetHunter-ZIP-Datei für die Installation aus.
+ Anschließend flaschen wir das Gerät, mit dem Button 
+\begin_inset Quotes eld
+\end_inset
+
+Flash Now
+\begin_inset Quotes erd
+\end_inset
+
+.
+
+\lang ngerman
+ Die Abbildung 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Add Zip unf Flash "
+
+\end_inset
+
+ zeigt das.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename Beitrag Carole/IT-Sichereit-master/Image/geänderte Bildergröße/img11.jpg
+	lyxscale 10
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+M
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Add Zip unf Flash 
+\begin_inset CommandInset label
+LatexCommand label
+name "Add Zip unf Flash "
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Danach wird eine 
+\begin_inset Quotes eld
+\end_inset
+
+Security Warning
+\begin_inset Quotes erd
+\end_inset
+
+ ausgegeben.
+ (Hinweis bezüglich Haftung, etc.) Anschauen 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:NetHunter Sicherheitswarnung vor der Installation "
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nun wählen wir die Flash-Methode aus.
+ Schauen die Abbildung 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Zu-installierende-Anwendung"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename Beitrag Carole/IT-Sichereit-master/Image/geänderte Bildergröße/img12.jpg
+	lyxscale 10
+	width 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+NetHunter Sicherheitswarnung vor der Installation 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:NetHunter Sicherheitswarnung vor der Installation "
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename Beitrag Carole/IT-Sichereit-master/Image/geänderte Bildergröße/img13.jpg
+	lyxscale 10
+	width 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Zu installierende Anwendung 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Zu-installierende-Anwendung"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Hinweise und Optionen bei der NetHunter Installation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Dann wir wählen die App zu installieren.
+ Diese Apps können zusätzlich zu Nethunter installiert werden.
+ Aber für das Projekt wir brauchen die nicht.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Diese Anwendungen sind in der Abbildung 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Anzeigen-der-möglichen-Anwendungen"
+
+\end_inset
+
+ zu sehen.
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Nethunter 
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Custom Nethunter Terminal Emulator 
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Custom Nethunter VNC (Der VNC-Dienst wird auf dem Localhost-Interface oder
+ external auch zuhören)
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+BlueNMEA (Sie ist eine Android-Anwendung, die Standortdaten über Bluetooth
+ (RFCOMM) oder TCP im NMEA-Format sendet.)
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+drivedroid (Dieses Tool ermöglicht uns emulierte NetHunter zu haben (a bootable
+ ISO or USB))
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Hackerskeyboard 
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+RF-Analyser (Diese App hilft für die Visualisierung von dem Frequenzspektrum)
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+USB-Keyboard (Das Tool kann sich als Tastatur über HID-Stil-Attacken Z.B
+ masquen)
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Router Keygen (frei WPA / WEP-Schlüssel-Generator für mehrere Router auf
+ der ganzen Welt.)
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename Beitrag Carole/IT-Sichereit-master/Image/geänderte Bildergröße/img14.jpg
+	lyxscale 10
+	width 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Auswahl von Anwendung Teil 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename Beitrag Carole/IT-Sichereit-master/Image/geänderte Bildergröße/img15.jpg
+	lyxscale 10
+	width 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Auswahl von Anwendungen Teil 2 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Anzeigen der möglichen, zu installierenden Anwendungen 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Anzeigen-der-möglichen-Anwendungen"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Endlich die Installation starten.
+ Die Abbildung 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Darstellung-der-Installation-von-NetHunter"
+
+\end_inset
+
+ zeigt das.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename Beitrag Carole/IT-Sichereit-master/Image/geänderte Bildergröße/img16.jpg
+	lyxscale 10
+	width 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Darstellung der Installation von NetHunter 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Darstellung-der-Installation-von-NetHunter"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Literatur: Installing and und Running Kali Nethunter.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Carole2"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
